@@ -1,0 +1,142 @@
+Feature Selection 
+=================
+
+Sources of the data
+==================
+(1) Accelerometer
+(2) Gyroscope
+
+The Acceleration signal was separated into:
+==========================================
+(1) body acceleration signals
+(2) gravity acceleration signals
+
+Domain of the signal:
+=====================
+(1) Time Domain Signal
+(2) Frequency Domain Signal
+
+Apart from Time and Frequency Domain Sign, there are additional vectors obtained by averaging the signals in a signal window sample. 
+These are used on the angle() variable:
+
+gravityMean
+TimeBodyAcceleratorMean
+TimeBodyGyroscopeMean
+TimeBodyGyroscopeJerkMean
+TimeBodyAcceleratorJerkMean
+
+For the last two above, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals. 
+
+Variables with Signal Magnitude
+===============================
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeBodyAcceleratorMagniturde, TimeGravityAcceleratorMagnitude, 
+TimeBodyAcceleratorJerkMagnitude, TimeBodyGyroscopeMagnitude, TimeBodyGyroscopeJerkMagnitude). 
+
+Signals Directors
+=================
+Signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+Variables Parameters
+====================
+The parameters used for the set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+The complete list of variables are as follows:
+===============================================
+
+Subject	
+activities	
+TimeBodyAccelerator.mean...X	
+TimeBodyAccelerator.mean...Y	
+TimeBodyAccelerator.mean...Z	
+TimeGravityAccelerator.mean...X	
+TimeGravityAccelerator.mean...Y	
+TimeGravityAccelerator.mean...Z	
+TimeBodyAcceleratorJerk.mean...X	
+TimeBodyAcceleratorJerk.mean...Y	
+TimeBodyAcceleratorJerk.mean...Z	
+TimeBodyGyroscope.mean...X	
+TimeBodyGyroscope.mean...Y	
+TimeBodyGyroscope.mean...Z	
+TimeBodyGyroscopeJerk.mean...X	
+TimeBodyGyroscopeJerk.mean...Y	
+TimeBodyGyroscopeJerk.mean...Z	
+TimeBodyAcceleratorMagnitude.mean..	
+TimeGravityAcceleratorMagnitude.mean..	
+TimeBodyAcceleratorJerkMagnitude.mean..	
+TimeBodyGyroscopeMagnitude.mean..	
+TimeBodyGyroscopeJerkMagnitude.mean..	
+Frequency_Domain_SignalsBodyAccelerator.mean...X	
+Frequency_Domain_SignalsBodyAccelerator.mean...Y	
+Frequency_Domain_SignalsBodyAccelerator.mean...Z	
+Frequency_Domain_SignalsBodyAccelerator.meanFreq...X	
+Frequency_Domain_SignalsBodyAccelerator.meanFreq...Y	
+Frequency_Domain_SignalsBodyAccelerator.meanFreq...Z	
+Frequency_Domain_SignalsBodyAcceleratorJerk.mean...X	
+Frequency_Domain_SignalsBodyAcceleratorJerk.mean...Y	
+Frequency_Domain_SignalsBodyAcceleratorJerk.mean...Z	
+Frequency_Domain_SignalsBodyAcceleratorJerk.meanFreq...X	
+Frequency_Domain_SignalsBodyAcceleratorJerk.meanFreq...Y	
+Frequency_Domain_SignalsBodyAcceleratorJerk.meanFreq...Z	
+Frequency_Domain_SignalsBodyGyroscope.mean...X	
+Frequency_Domain_SignalsBodyGyroscope.mean...Y	
+Frequency_Domain_SignalsBodyGyroscope.mean...Z	
+Frequency_Domain_SignalsBodyGyroscope.meanFreq...X	
+Frequency_Domain_SignalsBodyGyroscope.meanFreq...Y	
+Frequency_Domain_SignalsBodyGyroscope.meanFreq...Z	
+Frequency_Domain_SignalsBodyAcceleratorMagnitude.mean..	
+Frequency_Domain_SignalsBodyAcceleratorMagnitude.meanFreq..	
+Frequency_Domain_SignalsBodyBodyAcceleratorJerkMagnitude.mean..	
+Frequency_Domain_SignalsBodyBodyAcceleratorJerkMagnitude.meanFreq..	
+Frequency_Domain_SignalsBodyBodyGyroscopeMagnitude.mean..	
+Frequency_Domain_SignalsBodyBodyGyroscopeMagnitude.meanFreq..	
+Frequency_Domain_SignalsBodyBodyGyroscopeJerkMagnitude.mean..	
+Frequency_Domain_SignalsBodyBodyGyroscopeJerkMagnitude.meanFreq..	
+angle.TimeBodyAcceleratorMean.gravity.	
+angle.TimeBodyAcceleratorJerkMean..gravityMean.	
+angle.TimeBodyGyroscopeMean.gravityMean.	
+angle.TimeBodyGyroscopeJerkMean.gravityMean.	
+angle.X.gravityMean.	
+angle.Y.gravityMean.	
+angle.Z.gravityMean.	
+TimeBodyAccelerator.std...X	
+TimeBodyAccelerator.std...Y	
+TimeBodyAccelerator.std...Z	
+TimeGravityAccelerator.std...X	
+TimeGravityAccelerator.std...Y	
+TimeGravityAccelerator.std...Z	
+TimeBodyAcceleratorJerk.std...X	
+TimeBodyAcceleratorJerk.std...Y	
+TimeBodyAcceleratorJerk.std...Z	
+TimeBodyGyroscope.std...X	
+TimeBodyGyroscope.std...Y	
+TimeBodyGyroscope.std...Z	
+TimeBodyGyroscopeJerk.std...X	
+TimeBodyGyroscopeJerk.std...Y	
+TimeBodyGyroscopeJerk.std...Z	
+TimeBodyAcceleratorMagnitude.std..	
+TimeGravityAcceleratorMagnitude.std..	
+TimeBodyAcceleratorJerkMagnitude.std..	
+TimeBodyGyroscopeMagnitude.std..	
+TimeBodyGyroscopeJerkMagnitude.std..	
+Frequency_Domain_SignalsBodyAccelerator.std...X	
+Frequency_Domain_SignalsBodyAccelerator.std...Y	
+Frequency_Domain_SignalsBodyAccelerator.std...Z	
+Frequency_Domain_SignalsBodyAcceleratorJerk.std...X	
+Frequency_Domain_SignalsBodyAcceleratorJerk.std...Y	
+Frequency_Domain_SignalsBodyAcceleratorJerk.std...Z	
+Frequency_Domain_SignalsBodyGyroscope.std...X	
+Frequency_Domain_SignalsBodyGyroscope.std...Y	
+Frequency_Domain_SignalsBodyGyroscope.std...Z	
+Frequency_Domain_SignalsBodyAcceleratorMagnitude.std..	
+Frequency_Domain_SignalsBodyBodyAcceleratorJerkMagnitude.std..	
+Frequency_Domain_SignalsBodyBodyGyroscopeMagnitude.std..	
+Frequency_Domain_SignalsBodyBodyGyroscopeJerkMagnitude.std..	
+
+Grouping and Summarization of Variable Values
+=============================================
+(1) All variables are grouped by subject and by activity
+(2) An average is calculated for all variables in all groups
